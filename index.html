@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand mr-auto" href="#">Anoop Mishra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About-Me">About Me</a>
+                </li>
+
+            <!-- dropdown menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#Projects" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="true">Projects<span></span></a>
+                    <div class="dropdown-menu extended-dropdown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#Calculator">Calculator App</a>
+                        <a class="dropdown-item" href="#Weather">Weather App</a>
+                        <a class="dropdown-item" href="#Commerce">E-Commerce App</a>
+                        <a class="dropdown-item" href="#Gallery">Gallery App</a>
+                    </div>
+                </li>
+            <!-- dropdown menu end -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact-Me">Contact Me</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- header -->
+    <div class="container-fluid container-style">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 overlay-container">
+                
+                <img src="Images/background.jpg" class="overlay-img" alt="Background Image">
+                
+                <div class="overlay-content">
+                    <div class="profile-card">
+                        <img class="profile-pic" src="Images/profile.png" alt="Profile Picture">
+                    </div>
+                    <div class="name-card">
+                        <h3>Anoop Mishra</h3>
+                        <p>An aspiring computer scientist</p>
+                    </div>
+                </div>
+                <!--
+                <div class="major-card">
+                    <div class="major-details">
+                        <p><strong>Major:</strong> Computer Science</p>
+                        <p><strong>College:</strong> Bagley College of Engineering</p>
+                    </div>
+                    <div class="major-details">
+                        <p><strong>Major:</strong> Mathematics</p>
+                        <p><strong>College:</strong> College of Arts and Sciences</p>
+                    </div>
+                    
+                    
+                </div>
+                -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12"></div>
+            <div class="col-lg-8 col-md-6 col-sm-12 details">
+                
+                <!-- section one -->
+                <section id="one">
+                    <header class="heading" id="Home">
+                        <h2>Welcome</h2>
+                        <p id="description"> Please read through the contents to know more about who I am and what I do</p>
+                    </header>
+                </section>
+                <hr>
+
+                <!-- section two -->
+                <section id="two">
+                    <h2 class="heading"> Sample Projects</h2>
+
+                    <div class="container-fluid no-padding project-items">
+                        <div class="row project-details">
+                            <article class="col-lg-6 col-md-12 col-sm-12">
+                                <img class = "project-icons" id="Calculator" src="Images/calculator.png" alt="calculator">
+                                <h4><a href=#>Calculator App</a></h4>
+                                <p>A simple app that performs calculations. Calculations based on JS.</p>
+                            </article>
+
+                            <article class="col-lg-6 col-md-12 col-sm-12">
+                                <img class = "project-icons" id="Weather" src="Images/weather.png" alt="calculator">
+                                <h4><a href=#>Weather App</a></h4>
+                                <p>An app that shows the weather conditions based on city name.</p>
+                            </article>
+
+                            <article class="col-lg-6 col-md-12 col-sm-12">
+                                <img class = "project-icons" id="Commerce" src="Images/commerce.png" alt="calculator">
+                                <h4><a href=#>E-Commerce Landing Page</a></h4>
+                                <p>An example webpage of an e-commerce website built off of JS templates.</p>
+                            </article>
+
+                            <article class="col-lg-6 col-md-12 col-sm-12">
+                                <img class = "project-icons" id="Gallery" src="Images/gallery.png" alt="calculator">
+                                <h4><a href=#>Gallery App</a></h4>
+                                <p>A basic app that displays albums, and photos using JS templates.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <!--section three-->
+                <section id="three">
+                    <h2 class="heading" id="Contact-Me">Get in Touch</h2>
+                    <p> Try one of the following methods if you want to reach out to me.</p>
+                    
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12">
+                            <form method="post" action="#">
+                                <div class="row message-details">
+                                    <div class="col-lg-6 col-md-12">
+                                        <input type="text" name="name" id="name" placeholder="Name"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <input type="text" name="email" id="email" placeholder="Email"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                                    </div>
+                                </div> 
+                                
+                            </form>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <ul class="labels">
+                                <li>
+                                    <div class="label-item">
+                                        <i class="fas fa-home"></i>
+                                        <span>685 Barr Ave<br />
+                                            Starkville, MS 39759<br />
+                                            United States</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="label-item">
+                                        <i class="fas fa-phone"></i>
+                                        <span>808 384 2227</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="label-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <span><a href=#>am5103@msstate.edu</a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </section>
+                <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
